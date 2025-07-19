@@ -1,0 +1,40 @@
+{
+  "name": "vscode-drizzle-studio",
+  "displayName": "Drizzle Studio",
+  "description": "Drizzle Studio in vscode",
+  "version": "1.0.0",
+  "main": "./out/extension.js",
+  "publisher": "guskis",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-drizzle-studio.open",
+        "title": "Drizzle Studio: Open",
+        "icon": "$(table)"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.102.0",
+    "@vscode/vsce": "3.6.0",
+    "oxlint": "1.7.0",
+    "prettier": "3.6.2",
+    "typescript": "5.8.3"
+  }
+}
