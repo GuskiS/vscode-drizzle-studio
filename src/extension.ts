@@ -69,7 +69,7 @@ function getWebviewContent(url: string) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-          html, body, iframe { height: 100%; width: 100%; margin: 0; padding: 0; border: none; }
+          html, body, iframe { height: 100%; width: 100%; margin: 0; padding: 0; border: none; diplay: block; }
         </style>
       </head>
 
